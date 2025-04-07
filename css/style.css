@@ -8631,21 +8631,33 @@ textarea.form-control-lg {
 .position-relative {
   position: relative; }
 
+
+
 .logo {
-  font-size: 20px;
+  font-size: 30px;
   color: #fff;
   font-weight: 700;
-  top: 6px;
+  display: inline-block;
+  height: 70px;
+  line-height: 70px;
   position: relative;
- }
+  top: -8px;  /* <- This is the magic nudge */
+}
+
   .logo:hover {
     color: #fff; }
 
 .site-nav {
-  position: fixed;
+  position: absolute;
   top: 0;
   z-index: 1030; /* to prevent the navbar getting covered up by other content */
   width: 100%; }
+  
+
+.site-nav.visible {
+    transform: translateY(0);
+    opacity: 1;
+}  
 
 .site-nav {
   padding-top: 20px;
@@ -9250,7 +9262,7 @@ a {
       right: auto !important; } }
 
 .section {
-  padding: 7rem 0; }
+  padding: 2rem 0; }
   .section .heading {
     font-size: 40px;
     font-weight: bold;
@@ -9906,3 +9918,8 @@ a {
   margin-bottom: 10px;
 }
 
+.product-image {
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.1); /* soft border */
+}
