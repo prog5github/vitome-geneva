@@ -9924,11 +9924,11 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.1); /* soft border */
 }
 
-
+/* 
 .arrow-collapse.active::after {
   content: "▲";
 }
 .arrow-collapse::after {
   content: "▼";
   margin-left: 5px;
-}
+} */
