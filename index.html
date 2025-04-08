@@ -632,6 +632,25 @@
 		});
 		}
 	});
+
+
+	document.addEventListener("DOMContentLoaded", function () {
+		const dropdownToggles = document.querySelectorAll('.site-mobile-menu .has-children > a');
+	  
+		dropdownToggles.forEach(toggle => {
+		  toggle.addEventListener('click', function (e) {
+			e.preventDefault(); // Prevent navigation
+			const parentLi = this.parentElement;
+			const dropdown = parentLi.querySelector('.dropdown');
+			if (dropdown) {
+			  dropdown.classList.toggle('active');
+			  dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+			}
+		  });
+		});
+	  });
+	  
+
 	</script>
 
 </body>
