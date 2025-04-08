@@ -8675,7 +8675,7 @@ textarea.form-control-lg {
         padding: 10px 15px;
         display: inline-block;
         text-decoration: none !important;
-        color: #00AEEF; }
+        color: #fff; }
         .site-nav .site-navigation .site-menu > li > a:hover {
           color: #66C9F2; }
       .site-nav .site-navigation .site-menu > li.cta-button a {
@@ -8688,7 +8688,7 @@ textarea.form-control-lg {
           background: #fc5404;
           border-color: #fc5404; }
       .site-nav .site-navigation .site-menu > li.active > a {
-        color: #00AEEF; }
+        color: #fff; }
     .site-nav .site-navigation .site-menu .has-children {
       position: relative; }
       .site-nav .site-navigation .site-menu .has-children > a {
